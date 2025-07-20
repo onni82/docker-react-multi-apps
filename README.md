@@ -13,7 +13,7 @@ Each app is available via a custom local domain:
 ## Project Structure
 
 ```
-vite-multi-apps/
+docker-react-multi-apps/
 ├── app1/            # Vite React app 1
 │   └── Dockerfile
 ├── app2/            # Vite React app 2
@@ -55,29 +55,31 @@ Add:
 
 ## Step 2: Create or Replace Vite Apps
 
-If you haven't already created the Vite apps:
+If you want to replace the Vite apps, delete all contents except **Dockerfile** inside `app1`, `app2`, and `app3` respectively. Do not delete any **Dockerfile** in any of those folders.
+
+To replace the Vite apps with TypeScript Vite React apps, do the following commands:
 
 ```bash
 cd app1
-npm create vite@latest . -- --template react
+npm create vite@latest . -- --template react-ts
 npm install
 npm run build
 cd ..
 
 cd app2
-npm create vite@latest . -- --template react
+npm create vite@latest . -- --template react-ts
 npm install
 npm run build
 cd ..
 
 cd app3
-npm create vite@latest . -- --template react
+npm create vite@latest . -- --template react-ts
 npm install
 npm run build
 cd ..
 ```
 
-Or use your own Vite apps.
+Or use your own Vite/React apps.
 
 ---
 
