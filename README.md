@@ -119,6 +119,59 @@ docker-compose down
 
 ---
 
+Great to hear everything builds!
+
+Here are the essential commands you can use to **stop**, **restart**, and **run** your Docker containers without rebuilding everything after a reboot:
+
+---
+
+### Stop all running containers (gracefully)
+
+```bash
+docker-compose down
+```
+
+This stops and removes the containers (but **keeps your images** and volumes).
+
+---
+
+### Start the containers again (no rebuild)
+
+```bash
+docker-compose up -d
+```
+
+* `-d` means **detached mode** (runs in the background).
+* This uses the existing **images and containers**, unless changes are detected.
+
+---
+
+### Optional cleanup (if needed)
+
+If you want to stop everything but **preserve data and volumes**, just run:
+
+```bash
+docker-compose stop
+```
+
+And restart later with:
+
+```bash
+docker-compose start
+```
+
+---
+
+### Reminder
+
+If you ever want to **force a rebuild**, use:
+
+```bash
+docker-compose up --build -d
+```
+
+---
+
 ## Troubleshooting
 
 - Make sure Docker Desktop is running
