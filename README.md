@@ -55,7 +55,7 @@ Add:
 
 ## Step 2: Create or Replace Vite Apps
 
-If you want to replace the Vite apps, delete all contents except **Dockerfile** inside `app1`, `app2`, and `app3` respectively. Do not delete any **Dockerfile** in any of those folders.
+If you want to replace the Vite apps, delete all React app contents except **Dockerfile** inside `app1`, `app2`, and `app3` respectively. Do not delete any **Dockerfile** in any of those folders.
 
 To replace the Vite apps with TypeScript Vite React apps, do the following commands:
 
