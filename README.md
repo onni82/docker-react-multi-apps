@@ -32,7 +32,7 @@ docker-react-multi-apps/
 
 - [Docker Desktop](https://www.docker.com/products/docker-desktop)
 - [Node.js](https://nodejs.org/) (only for developing apps locally)
-- Add domains to your system’s `hosts` file
+- Add domains to your system's `hosts` file
 
 ---
 
@@ -116,12 +116,6 @@ To stop the containers:
 ```bash
 docker-compose down
 ```
-
----
-
-Great to hear everything builds!
-
-Here are the essential commands you can use to **stop**, **restart**, and **run** your Docker containers without rebuilding everything after a reboot:
 
 ---
 
