@@ -109,15 +109,7 @@ Visit each app in your browser:
 
 ---
 
-## Cleanup
-
-To stop the containers:
-
-```bash
-docker-compose down
-```
-
----
+## Stopping and Cleanup
 
 ### Stop all running containers (gracefully)
 
